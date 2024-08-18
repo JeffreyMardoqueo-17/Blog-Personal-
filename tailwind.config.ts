@@ -24,13 +24,11 @@ const config: Config = {
         },
         darkTheme: {
           primary: '#ffffff', // Blanco
-          background: '#212121', // Color de contraste
+          background: '#262635', // Color de contraste
           text: '#ffffff', // Blanco
           gray: '#cbd5e0', // Grisito más claro
-          formulario: '#171717',
-          opacidad: '#08060651',
-          hover: '#212121',
-          border: '#6366F1',
+          formulario: '#313144',
+          hover: '#3C3C53',
           icono: '#6669F1',
           input: '#2F2F2F'
         },

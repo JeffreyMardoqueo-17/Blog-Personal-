@@ -1,4 +1,5 @@
 import React from 'react'
+import Tarjeta from '@/components/Tarjeta'
 
 export default function TradingPage() {
     return (
@@ -19,6 +20,8 @@ export default function TradingPage() {
                 nobis, possimus commodi itaque tempora sapiente
                 consequatur vero deserunt quae natus neque numquam
                 non aliquam suscipit nihil voluptatibus! Perspiciatis, iste enim?</p>
+            <Tarjeta />
+
         </div>
     )
 }
