@@ -6,15 +6,39 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: 'class',
   theme: {
+    transparent: 'transparent',
+    current: 'currentColor',
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        //  primary: colors.blue,
+        // secondary: colors.slate,
+        lightTheme: {
+          primary: '#FFFF', // Color de contraste
+          background: '#F5F5F5', // Blanco
+          text: '#3182ce', // Azulito
+          gray: '#4a5568', // Gris oscursa
+          hover: '#F1F5F9',
+          opacidad: '#08060651'
+        },
+        darkTheme: {
+          primary: '#ffffff', // Blanco
+          background: '#212121', // Color de contraste
+          text: '#ffffff', // Blanco
+          gray: '#cbd5e0', // Grisito más claro
+          formulario: '#171717',
+          opacidad: '#08060651',
+          hover: '#212121',
+          border: '#6366F1',
+          icono: '#6669F1',
+          input: '#2F2F2F'
+        },
       },
+      plugins: [],
     },
   },
   plugins: [],
 };
+
 export default config;
