@@ -21,7 +21,7 @@ export default function TradingPage() {
                 consequatur vero deserunt quae natus neque numquam
                 non aliquam suscipit nihil voluptatibus! Perspiciatis, iste enim?</p>
             <Tarjeta />
-
+            <Tarjeta /><Tarjeta /><Tarjeta /><Tarjeta /><Tarjeta /><Tarjeta /><Tarjeta />
         </div>
     )
 }

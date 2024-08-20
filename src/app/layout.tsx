@@ -1,4 +1,4 @@
-import { ThemeProvider } from 'next-themes';
+// app/layout.tsx
 import Navigation from "@/components/Navigation";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -11,6 +11,13 @@ export const metadata: Metadata = {
   description: "Blog donde realizo publicaciones sobre tecnología, trading y diferentes cosas.",
 };
 
+// Estas son las rutas de la app
+const navItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Trading', href: '/trading' },
+  { label: 'Contact', href: '/contact' },
+];
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -18,13 +25,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-darkTheme-background`}>
-        <ThemeProvider attribute="class">
-          <Navigation />
-          <main className="pt-16">
-            {children}
-          </main>
-        </ThemeProvider>
+      <body className={`${inter.className} bg-lightTheme-background container mx-auto`}>
+        <Navigation navItems={navItems} />
+        <main className="p-2 mt-[5%]" >
+          {children}
+        </main>
       </body>
     </html>
   );
